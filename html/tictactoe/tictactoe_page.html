@@ -1,0 +1,85 @@
+﻿<html>
+<head>
+    <meta charset="OTF-8">
+    <link rel="stylesheet" type="text/css" href="../../css/formatting_tictactoe.css">
+    <script src="../../js/tictactoe.js"></script>
+    <title>TicTacToe Game</title>
+</head>
+<body>
+    <header id="pageHeader" class="class_header">
+        <h1 class="class_header">TicTacToe Game</h1>
+        <p class="class_header">Local multiplayer game of tic tac toe.</p>
+        <hr />
+        <p></p>
+    </header>
+
+    <p id="last_game_display" class="class_lastg">First Game</p>
+    <p id="last_turn_display" class="class_lastg">Turn: X</p>
+
+    <div id="gameBody" class="class_game">
+        <table>
+            <tr>
+                <td id="slot0" class="class_gameslot" onclick="TakeSlot(0)">
+                    <b > </b>
+                </td>
+                <td id="slot1" class="class_gameslot" onclick="TakeSlot(1)">
+                    <b> </b>
+                </td>
+                <td id="slot2" class="class_gameslot" onclick="TakeSlot(2)">
+                    <b> </b>
+                </td>
+            </tr>
+            <tr>
+                <td id="slot3" class="class_gameslot" onclick="TakeSlot(3)">
+                    <b> </b>
+                </td>
+                <td id="slot4" class="class_gameslot" onclick="TakeSlot(4)">
+                    <b> </b>
+                </td>
+                <td id="slot5" class="class_gameslot" onclick="TakeSlot(5)">
+                    <b> </b>
+                </td>
+            </tr>
+            <tr>
+                <td id="slot6" class="class_gameslot" onclick="TakeSlot(6)">
+                    <b> </b>
+                </td>
+                <td id="slot7" class="class_gameslot" onclick="TakeSlot(7)">
+                    <b> </b>
+                </td>
+                <td id="slot8" class="class_gameslot" onclick="TakeSlot(8)">
+                    <b> </b>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <div id="buttons" class="class_buttons">
+        <button class="actionButton" onclick="ClearSlots()">
+            <b>NEX GAME</b>
+        </button>
+        <button class="actionButton" onclick="ClearScores()">
+            <b>CLEAR SCORE</b>
+        </button>
+        </div>
+
+    <div id="scores" class="class_scores">
+        <table>
+            <tr>
+                <th colspan="2">SCORE</th>
+            </tr>
+            <tr>
+                <th id="scoreX_label"class="class_scores">X</th>
+                <th id="scoreO_label"class="class_scores">O</th>
+            </tr>
+            <tr>
+                <td id="scoreX_value"class="class_scores">0</td>
+                <td id="scoreO_value"class="class_scores">0</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+</html>
